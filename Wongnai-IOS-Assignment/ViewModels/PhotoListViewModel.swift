@@ -19,7 +19,6 @@ class PhotoListViewModel {
         AF.request("https://api.500px.com/v1/photos?feature=popular&page=\(page)")
             .validate(contentType: ["application/json"])
             .responseJSON { (response) in
-                print("Loaded")
                 switch response.result {
                 case let .success(result):
                     if let data = result as? NSDictionary, let photo = data["photos"] as? [NSDictionary] {
@@ -42,7 +41,6 @@ class PhotoListViewModel {
                 case .failure:
                     // reload Photo if fail
                     Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
-                        print("Reload")
                         self.loadPhotos(isInit: isInit, page: page)
                     }
                 }
