@@ -14,7 +14,7 @@ import Alamofire
 class PhotoListViewModel {
     let publishPhotos = BehaviorRelay<[Photo]>(value: [])
     
-    func loadPhoto(isInit: Bool = true, page: Int) {
+    func loadPhotos(isInit: Bool = true, page: Int) {
         AF.request("https://api.500px.com/v1/photos?feature=popular&page=\(page)")
             .validate(contentType: ["application/json"])
             .responseJSON { (response) in

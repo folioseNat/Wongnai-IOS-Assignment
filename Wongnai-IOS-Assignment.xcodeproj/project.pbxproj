@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0449904A8D05D842C5924F9 /* Pods_Wongnai_IOS_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FF4943E46F7BC8C0C60869 /* Pods_Wongnai_IOS_Assignment.framework */; };
 		FD08A6EC24E8EEA200617B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD08A6EB24E8EEA200617B9F /* AppDelegate.swift */; };
 		FD08A6EE24E8EEA200617B9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD08A6ED24E8EEA200617B9F /* SceneDelegate.swift */; };
 		FD08A6F324E8EEA200617B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD08A6F124E8EEA200617B9F /* Main.storyboard */; };
@@ -17,9 +18,14 @@
 		FD08A70824E8FA7B00617B9F /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD08A70624E8FA7B00617B9F /* PhotoCell.xib */; };
 		FD08A70A24E8FAC400617B9F /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD08A70924E8FAC400617B9F /* PhotoListViewModel.swift */; };
 		FD08A70C24E8FAFC00617B9F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD08A70B24E8FAFC00617B9F /* Photo.swift */; };
+		FD53399924E980AE00D1C3AF /* ImageInsertionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53399724E980AE00D1C3AF /* ImageInsertionCell.swift */; };
+		FD53399A24E980AE00D1C3AF /* ImageInsertionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD53399824E980AE00D1C3AF /* ImageInsertionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67956AABD955B15F7A41942A /* Pods-Wongnai-IOS-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wongnai-IOS-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Wongnai-IOS-Assignment/Pods-Wongnai-IOS-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		70FF4943E46F7BC8C0C60869 /* Pods_Wongnai_IOS_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wongnai_IOS_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8FB6E2E1D4603FE694C9E49 /* Pods-Wongnai-IOS-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wongnai-IOS-Assignment.release.xcconfig"; path = "Target Support Files/Pods-Wongnai-IOS-Assignment/Pods-Wongnai-IOS-Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		FD08A6E824E8EEA200617B9F /* Wongnai-IOS-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wongnai-IOS-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD08A6EB24E8EEA200617B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD08A6ED24E8EEA200617B9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +38,8 @@
 		FD08A70624E8FA7B00617B9F /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 		FD08A70924E8FAC400617B9F /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
 		FD08A70B24E8FAFC00617B9F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		FD53399724E980AE00D1C3AF /* ImageInsertionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInsertionCell.swift; sourceTree = "<group>"; };
+		FD53399824E980AE00D1C3AF /* ImageInsertionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageInsertionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0449904A8D05D842C5924F9 /* Pods_Wongnai_IOS_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFDD464928A407BEE5FEEF1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70FF4943E46F7BC8C0C60869 /* Pods_Wongnai_IOS_Assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5569110FE6D894CF2D0C583 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67956AABD955B15F7A41942A /* Pods-Wongnai-IOS-Assignment.debug.xcconfig */,
+				C8FB6E2E1D4603FE694C9E49 /* Pods-Wongnai-IOS-Assignment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FD08A6DF24E8EEA200617B9F = {
 			isa = PBXGroup;
 			children = (
 				FD08A6EA24E8EEA200617B9F /* Wongnai-IOS-Assignment */,
 				FD08A6E924E8EEA200617B9F /* Products */,
+				C5569110FE6D894CF2D0C583 /* Pods */,
+				BFDD464928A407BEE5FEEF1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +124,7 @@
 		FD08A70124E8F94600617B9F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FD53399424E9805A00D1C3AF /* ImageInsertionCell */,
 				FD08A70424E8FA0D00617B9F /* PhotoCell */,
 				FD08A70224E8F99200617B9F /* PhotoListViewController.swift */,
 			);
@@ -111,6 +140,15 @@
 			path = PhotoCell;
 			sourceTree = "<group>";
 		};
+		FD53399424E9805A00D1C3AF /* ImageInsertionCell */ = {
+			isa = PBXGroup;
+			children = (
+				FD53399724E980AE00D1C3AF /* ImageInsertionCell.swift */,
+				FD53399824E980AE00D1C3AF /* ImageInsertionCell.xib */,
+			);
+			path = ImageInsertionCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD08A6FC24E8EEA300617B9F /* Build configuration list for PBXNativeTarget "Wongnai-IOS-Assignment" */;
 			buildPhases = (
+				9925D562FDF9D8BDFBC46D67 /* [CP] Check Pods Manifest.lock */,
 				FD08A6E424E8EEA200617B9F /* Sources */,
 				FD08A6E524E8EEA200617B9F /* Frameworks */,
 				FD08A6E624E8EEA200617B9F /* Resources */,
+				321808440D32BF0EB37ED7A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD08A70824E8FA7B00617B9F /* PhotoCell.xib in Resources */,
+				FD53399A24E980AE00D1C3AF /* ImageInsertionCell.xib in Resources */,
 				FD08A6F824E8EEA300617B9F /* LaunchScreen.storyboard in Resources */,
 				FD08A6F524E8EEA300617B9F /* Assets.xcassets in Resources */,
 				FD08A6F324E8EEA200617B9F /* Main.storyboard in Resources */,
@@ -178,11 +219,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		321808440D32BF0EB37ED7A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wongnai-IOS-Assignment/Pods-Wongnai-IOS-Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wongnai-IOS-Assignment/Pods-Wongnai-IOS-Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wongnai-IOS-Assignment/Pods-Wongnai-IOS-Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9925D562FDF9D8BDFBC46D67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wongnai-IOS-Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD08A6E424E8EEA200617B9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD53399924E980AE00D1C3AF /* ImageInsertionCell.swift in Sources */,
 				FD08A70C24E8FAFC00617B9F /* Photo.swift in Sources */,
 				FD08A70724E8FA7B00617B9F /* PhotoCell.swift in Sources */,
 				FD08A6EC24E8EEA200617B9F /* AppDelegate.swift in Sources */,
@@ -330,6 +414,7 @@
 		};
 		FD08A6FD24E8EEA300617B9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67956AABD955B15F7A41942A /* Pods-Wongnai-IOS-Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -348,6 +433,7 @@
 		};
 		FD08A6FE24E8EEA300617B9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8FB6E2E1D4603FE694C9E49 /* Pods-Wongnai-IOS-Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

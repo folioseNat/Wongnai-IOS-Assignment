@@ -12,24 +12,27 @@
         <scene sceneID="Qzr-Lh-L7N">
             <objects>
                 <viewController id="zAw-SU-oOE" customClass="PhotoListViewController" customModule="Wongnai_IOS_Assignment" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0ba-Id-NBX">
+                    <view key="view" contentMode="scaleToFill" id="Wmn-z6-VnL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YBJ-yp-zEf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="srJ-SU-6d5">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="YBJ-yp-zEf" firstAttribute="leading" secondItem="MTg-Hu-Ks2" secondAttribute="leading" id="Iek-N3-zLh"/>
-                            <constraint firstItem="YBJ-yp-zEf" firstAttribute="trailing" secondItem="MTg-Hu-Ks2" secondAttribute="trailing" id="MGm-MO-Lox"/>
-                            <constraint firstItem="YBJ-yp-zEf" firstAttribute="top" secondItem="MTg-Hu-Ks2" secondAttribute="top" id="nMs-gm-sB1"/>
-                            <constraint firstItem="YBJ-yp-zEf" firstAttribute="bottom" secondItem="MTg-Hu-Ks2" secondAttribute="bottom" id="xfx-Vn-k04"/>
+                            <constraint firstItem="7lU-xq-mv8" firstAttribute="trailing" secondItem="srJ-SU-6d5" secondAttribute="trailing" id="0pE-VW-Ahf"/>
+                            <constraint firstItem="7lU-xq-mv8" firstAttribute="bottom" secondItem="srJ-SU-6d5" secondAttribute="bottom" id="6Ei-kX-FsK"/>
+                            <constraint firstItem="srJ-SU-6d5" firstAttribute="leading" secondItem="7lU-xq-mv8" secondAttribute="leading" id="qhL-Ft-mVj"/>
+                            <constraint firstItem="srJ-SU-6d5" firstAttribute="top" secondItem="7lU-xq-mv8" secondAttribute="top" id="rNi-gs-VRc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="MTg-Hu-Ks2"/>
+                        <viewLayoutGuide key="safeArea" id="7lU-xq-mv8"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="srJ-SU-6d5" id="K6P-1L-i89"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jfi-Pa-NYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
