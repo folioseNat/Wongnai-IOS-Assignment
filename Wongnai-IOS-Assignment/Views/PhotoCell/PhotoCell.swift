@@ -18,7 +18,14 @@ class PhotoCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        photoImage.layer.cornerRadius = 4
+    }
+    
+    override func prepareForReuse() {
+        photoImage.image = nil
+        nameLabel.text = ""
+        votesCountLabel.text = ""
+        photoDescription.text = ""
     }
     
 }
