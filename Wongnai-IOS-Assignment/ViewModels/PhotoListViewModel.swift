@@ -12,30 +12,39 @@ import RxCocoa
 import Alamofire
 
 class PhotoListViewModel {
-    let publishPhotos = BehaviorRelay<[Photo]>(value: [])
+    let photos = BehaviorRelay<[Photo]>(value: [])
     
+    // func load Photos using Alamofire
     func loadPhotos(isInit: Bool = true, page: Int) {
         AF.request("https://api.500px.com/v1/photos?feature=popular&page=\(page)")
             .validate(contentType: ["application/json"])
             .responseJSON { (response) in
+                print("Loaded")
                 switch response.result {
                 case let .success(result):
                     if let data = result as? NSDictionary, let photo = data["photos"] as? [NSDictionary] {
                         
+                        // map Json to Photo
                         let photoArray = photo.map { (result) -> Photo in
                             return self.mapJsonToPhoto(json: result)
                         }
+                        
+                        // check for add next page to Photos or not
                         if isInit {
-                            self.publishPhotos.accept(photoArray)
+                            self.photos.accept(photoArray)
                         } else {
-                            var newPhotos = self.publishPhotos.value
+                            var newPhotos = self.photos.value
                             newPhotos.append(contentsOf: photoArray)
-                            self.publishPhotos.accept(newPhotos)
+                            self.photos.accept(newPhotos)
                         }
                     }
                     
-                case let .failure(error):
-                    print(error.localizedDescription)
+                case .failure:
+                    // reload Photo if fail
+                    Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
+                        print("Reload")
+                        self.loadPhotos(isInit: isInit, page: page)
+                    }
                 }
         }
     }

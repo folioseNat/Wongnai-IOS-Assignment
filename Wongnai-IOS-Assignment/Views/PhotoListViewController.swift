@@ -42,8 +42,8 @@ class PhotoListViewController: UIViewController {
     }
     
     private func bindTableView() {
-        // when publishPhotos publishing data (onNext:)
-        photoViewModel.publishPhotos
+        // when photos accept data
+        photoViewModel.photos
             .do(onNext: { photos in
                 
                 // DO: set lastlow from photos.count and end refreshing
@@ -93,6 +93,8 @@ class PhotoListViewController: UIViewController {
     
     // event when pull to refresh
     @objc func refresh(_ sender: AnyObject) {
+        lastRow = 0
+        page = 1
         disposeBag = DisposeBag()
         bindTableView()
     }
